@@ -8,9 +8,12 @@
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [💻 Getting Started ](#-getting-started-)
-    - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
+     - [Prerequisites](#prerequisites)
+     - [Setup](#setup)
+     - [Install](#install)
+     - [Usage](#usage)
   - [👥 Authors ](#-authors-)
+  - [🔭 Future Features](#future-features)
   - [🤝 Contributing ](#-contributing-)
   - [👋 Show your support ](#-show-your-support-)
   - [🔭Acknowledgments ](#acknowledgments-)
@@ -53,6 +56,7 @@ you have to install those in your local machine.
 - [ ] Ruby.
 - [ ] Visual Studio Code.
 
+
 ### Setup
 
 Clone the project.
@@ -61,15 +65,23 @@ Clone the project.
   git clone "https://github.com/AbdelazizSoliman/OOP-school-library.git"
 ```
 
-Go to the project directory.
+### Install
 
-```bash
-  cd EnOOP-school-library
+To install dependencies, the following command must be run in the terminal:
+
+```sh
+  cd OOP--School--Library
+  rubocop
 ```
 
+### Usage
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-<!-- ### Run tests
+In the project directory, you can run:
+
+```sh
+  irb -r ./filename.rb
+```
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,6 +93,15 @@ Go to the project directory.
 - GitHub: [@abdelazizsoliman](https://github.com/abdelazizsoliman)
 - Twitter: [@Abdelaz21958317](https://twitter.com/Abdelaz21958317)
 - LinkedIn: [Abdelaziz Soliman](https://www.linkedin.com/in/abdelazizsoliman/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[decorate a class]**
+- [ ] **[set up associations]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
