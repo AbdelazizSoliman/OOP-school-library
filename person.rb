@@ -1,4 +1,6 @@
 require_relative 'nameable'
+require_relative 'capitalize_decoder'
+require_relative 'trimmer_deocrator'
 
 class Person
   attr_accessor :name, :age
