@@ -100,8 +100,8 @@ In the project directory, you can run:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[decorate a class]**
 - [ ] **[set up associations]**
+- [ ] **[add basic UI]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
