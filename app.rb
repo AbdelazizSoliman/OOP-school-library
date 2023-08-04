@@ -1,4 +1,5 @@
 require_relative 'book'
+require_relative 'person'
 
 class App
     def initialize
@@ -17,3 +18,15 @@ class App
         end
       end
     end
+
+    def list_people
+        if @people.empty?
+          puts 'No people available.'
+          return
+        end
+    
+        puts 'All people:'
+        @people.each do |person|
+          puts "[#{person.class.name}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+        end
+      end
