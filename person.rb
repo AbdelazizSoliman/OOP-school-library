@@ -3,22 +3,21 @@ require_relative 'capitalize_decorator'
 require_relative 'trimmer_decorator'
 
 class Person < Nameable
-    attr_accessor :name, :age
-    attr_reader :id, :rentals
+    attr_accessor :name, :age, :book , :rentals
+    attr_reader :id
   
     def initialize(age, name = 'unknown', parent_permission: true)
       super()
-      @id = Random.rand(1..188)
+      @id = id
       @name = name
       @age = age
       @parent_permission = parent_permission
       @rentals = []
     end
   
-    def add_rental(rental)
-      @rentals << rental
-      rental.person = self
-    end
+    def add_rental(book, date)
+        Rental.new(date, book, self)
+      end
   
     def can_use_services?
       of_age? || @parent_permission
