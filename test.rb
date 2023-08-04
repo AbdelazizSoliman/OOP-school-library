@@ -22,11 +22,9 @@ english_class.add_student(student2)
 puts math_class.students.inspect
 puts english_class.students
 
-
 book = Book.new('Book 1', 'Author 1')
 person2 = Person.new(16, 'Alice', parent_permission: true)
 Rental.new('2023-07-26', book, person2)
 
 puts book.rentals
 puts person2.rentals.inspect
-
