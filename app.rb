@@ -81,8 +81,14 @@ class App
     gets.chomp.to_i
   end
 
-  def find_person_by_id(id);
- end
+  def find_person_by_id(id)
+    person = @people.find { |p| p.id == id }
+    unless person
+      puts "Could not find person with id #{id}."
+      return nil
+    end
+    person
+  end
 
   def get_rentals_by_person(person)
     @rentals.select { |r| r.person == person }
