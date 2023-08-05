@@ -4,6 +4,7 @@ require_relative 'teacher'
 require_relative 'student'
 require_relative 'create_person'
 require_relative 'create_book'
+require_relative 'rental'
 class App
     def initialize
       @people = []
@@ -45,8 +46,14 @@ class App
           person_creator.create_teacher
         end
       end
-      
+
       def create_book
         book_creator = BookCreator.new(@books)
         book_creator.create_book
       end
+
+      def create_rental
+        rental_creator = RentalCreator.new(@books, @people, @rentals)
+        rental_creator.create_rental
+      end
+    
