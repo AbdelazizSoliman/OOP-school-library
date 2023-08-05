@@ -42,3 +42,5 @@ def perform_action_for_choice(choice, app)
   else puts 'Invalid choice. Please try again.'
   end
 end
+
+main
