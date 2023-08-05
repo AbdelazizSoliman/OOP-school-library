@@ -81,11 +81,16 @@ class App
     gets.chomp.to_i
   end
 
-  def find_person_by_id(id); end
+  def find_person_by_id(id);
+ end
 
   def get_rentals_by_person(person)
     @rentals.select { |r| r.person == person }
   end
 
-  def print_rentals(rentals); end
+  def print_rentals(rentals)
+    rentals.each do |rental|
+      puts "Date: #{rental.date}, Book \"#{rental.book.title}\" by #{rental.book.author}"
+    end
+  end
 end
