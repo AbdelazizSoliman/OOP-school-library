@@ -2,7 +2,8 @@ require_relative 'book'
 require_relative 'person'
 require_relative 'teacher'
 require_relative 'student'
-
+require_relative 'create_person'
+require_relative 'create_book'
 class App
     def initialize
       @people = []
@@ -43,4 +44,9 @@ class App
         when 2
           person_creator.create_teacher
         end
+      end
+      
+      def create_book
+        book_creator = BookCreator.new(@books)
+        book_creator.create_book
       end
