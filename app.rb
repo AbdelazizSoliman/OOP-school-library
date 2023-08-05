@@ -56,4 +56,19 @@ class App
         rental_creator = RentalCreator.new(@books, @people, @rentals)
         rental_creator.create_rental
       end
+
+      def list_all_rentals_by_person_id
+        person_id = read_person_id_from_user_input
+        person = find_person_by_id(person_id)
     
+        return unless person
+    
+        rentals = get_rentals_by_person(person)
+    
+        if rentals.empty?
+          puts "#{person.name} (id: #{person.id}) has no rentals."
+        else
+          puts "All rentals for #{person.name} (id: #{person.id}):"
+          print_rentals(rentals)
+        end
+      end
