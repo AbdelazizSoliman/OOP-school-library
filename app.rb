@@ -6,6 +6,8 @@ require_relative 'create_person'
 require_relative 'create_book'
 require_relative 'rental'
 require_relative 'create_rental'
+require_relative 'classroom'
+
 
 class App
     def initialize
