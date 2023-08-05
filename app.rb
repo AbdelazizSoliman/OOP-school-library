@@ -5,6 +5,8 @@ require_relative 'student'
 require_relative 'create_person'
 require_relative 'create_book'
 require_relative 'rental'
+require_relative 'create_rental'
+
 class App
     def initialize
       @people = []
@@ -72,3 +74,19 @@ class App
           print_rentals(rentals)
         end
       end
+
+      def read_person_id_from_user_input
+        print 'Person id: '
+        gets.chomp.to_i
+      end
+    
+      def find_person_by_id(id)
+      end
+    
+      def get_rentals_by_person(person)
+        @rentals.select { |r| r.person == person }
+      end
+    
+      def print_rentals(rentals)
+      end
+    end

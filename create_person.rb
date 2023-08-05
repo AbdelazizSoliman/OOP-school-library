@@ -1,6 +1,6 @@
 require_relative 'person'
 require_relative 'student'
-require_relative 'class_room'
+require_relative 'classroom'
 class PersonCreator
   def initialize(people)
     @people = people
