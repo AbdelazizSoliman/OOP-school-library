@@ -1,3 +1,5 @@
+require 'pry'  # Add Pry require at the top
+
 require_relative 'app'
 
 def main
@@ -5,6 +7,10 @@ def main
 
   loop do
     display_menu_options
+
+    # Set breakpoint before reading user choice
+    binding.pry
+
     choice = read_user_choice_from_menu
 
     break if choice == 7
